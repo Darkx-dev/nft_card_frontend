@@ -21,7 +21,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 
 }
 
@@ -32,7 +32,7 @@ body {
     background: var(--cardBg);
     padding: 20px;
     border-radius: 10px;
-    width: min-content;
+    max-width: 290px;
     height: 520px
 }
 
@@ -66,9 +66,38 @@ body {
     font-size: 13px;
     -webkit-text-stroke: .5px;
 }
-.NFT {
-    height: 250px;
+
+img.NFT {
+    width: 100%;
+    aspect-ratio: 1/1;
     border-radius: 10px;
+    display: block;
+}
+
+div.NFT {
+    position: relative;
+}
+
+div.NFT:hover {
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 100ms linear;
+    background-image: url(images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.overlay:hover,
+.overlay:focus-visible {
+    opacity: 1;
 }
 
 .subComponent {
@@ -76,14 +105,16 @@ body {
     justify-content: space-between;
     position: relative;
 }
+
 .profile img {
     height: 30px;
     width: 30px;
     object-fit: cover;
     border: 2px var(--White) solid;
     border-radius: 50%;
-    
+
 }
+
 .profile {
     display: flex;
     align-items: center;
@@ -101,17 +132,17 @@ body {
 }
 
 .line {
-   border-color: var(--line);
-   border-style: solid;
-   
+    border-color: var(--line);
+    border-style: solid;
+
 }
 
 .subFooter {
     display: flex;
     align-items: center;
-    
+
 }
 
-.subFooter > span {
+.subFooter>span {
     color: var(--White);
 }
