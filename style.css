@@ -1,0 +1,117 @@
+:root {
+    --mainBg: hsl(217, 54%, 11%);
+    --cardBg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --para: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--mainBg);
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.component {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--cardBg);
+    padding: 20px;
+    border-radius: 10px;
+    width: min-content;
+    height: 520px
+}
+
+.heading {
+    color: var(--White);
+}
+
+.para {
+    font-size: 15px;
+    color: var(--para);
+}
+
+.etherum {
+    display: flex;
+    align-items: center;
+}
+
+.ethText {
+    color: var(--Cyan);
+    font-size: 13px;
+    -webkit-text-stroke: .5px;
+}
+
+.clock {
+    display: flex;
+    align-items: center;
+}
+
+.clockText {
+    color: var(--para);
+    font-size: 13px;
+    -webkit-text-stroke: .5px;
+}
+.NFT {
+    height: 250px;
+    border-radius: 10px;
+}
+
+.subComponent {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.profile img {
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    border: 2px var(--White) solid;
+    border-radius: 50%;
+    
+}
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile span {
+    color: var(--para);
+    padding: 0 5px 0 20px;
+    font-weight: 500;
+}
+
+
+.icon {
+    padding-right: 7px;
+}
+
+.line {
+   border-color: var(--line);
+   border-style: solid;
+   
+}
+
+.subFooter {
+    display: flex;
+    align-items: center;
+    
+}
+
+.subFooter > span {
+    color: var(--White);
+}
